@@ -57,25 +57,3 @@ async function shouldGetMessageFromTheQueue() {
   
   await shouldGetMessageFromTheQueue();
 })();
-
-// it("should get the next message from the queue", async () => {
-//   const queueName = "testQueue";
-//   const message = { text: "Hello, World!" };
-
-//   // First, add a message to the queue
-//   await addMessage(queueName, message);
-
-//   const response = await request(app).get(`/api/${queueName}`);
-
-//   expect(response.status).toBe(StatusCodes.OK);
-//   expect(response.body.message).toEqual(message);
-// });
-
-// it("should return 204 if no message in the queue after timeout", async () => {
-//   const queueName = "emptyQueue";
-
-//   const response = await request(app).get(`/api/${queueName}?timeout=1000`);
-
-//   expect(response.status).toBe(StatusCodes.NO_CONTENT);
-// });
-//   });
